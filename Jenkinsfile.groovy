@@ -3,6 +3,6 @@ node {
     git url: 'https://github.com/JUSTPERFECT/jenkins-iacTest.git'
   }
   stage ('Generate Jobs') {
-    jobDsl sandbox: false, targets: '*.groovy'
+    jobDsl sandbox: true, targets: '*.groovy'
   }
 }
